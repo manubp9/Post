@@ -1,9 +1,9 @@
-import java.util.ArrayList;
+
 public class MessagePost extends CommentedPost
 {
 
     private String message;
-    private ArrayList<String> comments;
+    
 
 
     /**
@@ -13,16 +13,10 @@ public class MessagePost extends CommentedPost
     {
         super(author);
         message = text;
-        comments = new ArrayList<>();
+        
 
     }
-    /**
-     * Metodo para añadir un comentario al post
-     */
-    public void addComment(String text){
-        comments.add(text);
-    }
-    
+  
 
     /**
      * devuelve el mensaje

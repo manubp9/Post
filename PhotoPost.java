@@ -1,5 +1,5 @@
 
-import java.util.ArrayList;
+
 /**
  * Write a description of class MessagePost here.
  * 
@@ -11,7 +11,7 @@ public class PhotoPost extends CommentedPost
 
     private String filename;
     private String caption;
-    private ArrayList<String> comments;
+    
     /**
      * Constructor for objects of class MessagePost
      */
@@ -20,8 +20,7 @@ public class PhotoPost extends CommentedPost
         super(author);
         this.filename = filename;
         this.caption = caption;
-        comments = new ArrayList<>();
-
+        
     }
 
     /**
@@ -40,9 +39,4 @@ public class PhotoPost extends CommentedPost
         return caption;
     }
 
-    /**
-     * Metodo para añadir un comentario al post
-     */
-    public void addComment(String text){
-        comments.add(text);
-    }}
+}
