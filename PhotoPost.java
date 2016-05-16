@@ -1,33 +1,48 @@
 
+import java.util.ArrayList;
 /**
- * Write a description of class PhotoPost here.
+ * Write a description of class MessagePost here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class PhotoPost
+public class PhotoPost extends Post
 {
-    // instance variables - replace the example below with your own
-    private int x;
 
+    private String filename;
+    private String caption;
+    private ArrayList<String> comments;
     /**
-     * Constructor for objects of class PhotoPost
+     * Constructor for objects of class MessagePost
      */
-    public PhotoPost()
+    public PhotoPost( String filename, String caption,String author)
     {
-        // initialise instance variables
-        x = 0;
+        super(author);
+        this.filename = filename;
+        this.caption = caption;
+        comments = new ArrayList<>();
+
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * devuelve el nombre del archivo
      */
-    public int sampleMethod(int y)
+    public String getFileName()
     {
-        // put your code here
-        return x + y;
+        return filename;
     }
-}
+
+    /**
+     * devuelve la cabecera
+     */
+    public String getCaption()
+    {
+        return caption;
+    }
+
+    /**
+     * Metodo para añadir un comentario al post
+     */
+    public void addComment(String text){
+        comments.add(text);
+    }}

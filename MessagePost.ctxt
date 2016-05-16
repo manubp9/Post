@@ -1,8 +1,14 @@
 #BlueJ class context
-comment0.params=
-comment0.target=MessagePost()
+comment0.params=author\ text
+comment0.target=MessagePost(java.lang.String,\ java.lang.String)
 comment0.text=\r\n\ Constructor\ for\ objects\ of\ class\ MessagePost\r\n
-comment1.params=y
-comment1.target=int\ sampleMethod(int)
-comment1.text=\r\n\ An\ example\ of\ a\ method\ -\ replace\ this\ comment\ with\ your\ own\r\n\ \r\n\ @param\ \ y\ \ \ a\ sample\ parameter\ for\ a\ method\r\n\ @return\ \ \ \ \ the\ sum\ of\ x\ and\ y\ \r\n
-numComments=2
+comment1.params=text
+comment1.target=void\ addComment(java.lang.String)
+comment1.text=\r\n\ Metodo\ para\ a\u00F1adir\ un\ comentario\ al\ post\r\n
+comment2.params=
+comment2.target=java.lang.String\ getText()
+comment2.text=\r\n\ devuelve\ el\ mensaje\r\n
+comment3.params=
+comment3.target=void\ printShortSummary()
+comment3.text=\r\n\ devuelve\ quien\ crea\ el\ post\r\n
+numComments=4

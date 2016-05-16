@@ -5,29 +5,25 @@
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class JoinGroupPost
+public class JoinGroupPost extends Post
 {
     // instance variables - replace the example below with your own
-    private int x;
+    private String grupo;
 
     /**
      * Constructor for objects of class JoinGroupPost
      */
-    public JoinGroupPost()
+    public JoinGroupPost(String author,String grupo)
     {
-        // initialise instance variables
-        x = 0;
+        super(author);
+        this.grupo = grupo;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     *Devuelve el nombre del grupo al  que se ha unido
      */
-    public int sampleMethod(int y)
+    public String getNombreGrupo()
     {
-        // put your code here
-        return x + y;
+        return grupo;
     }
 }

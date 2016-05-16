@@ -1,33 +1,43 @@
-
-/**
- * Write a description of class MessagePost here.
- * 
- * @author (your name) 
- * @version (a version number or a date)
- */
-public class MessagePost
+import java.util.ArrayList;
+public class MessagePost extends Post
 {
-    // instance variables - replace the example below with your own
-    private int x;
+
+    private String message;
+    private ArrayList<String> comments;
+
 
     /**
      * Constructor for objects of class MessagePost
      */
-    public MessagePost()
+    public MessagePost(String author, String text)
     {
-        // initialise instance variables
-        x = 0;
+        super(author);
+        message = text;
+        comments = new ArrayList<>();
+
+    }
+    /**
+     * Metodo para añadir un comentario al post
+     */
+    public void addComment(String text){
+        comments.add(text);
+    }
+    
+
+    /**
+     * devuelve el mensaje
+     */
+    public String getText()
+    {
+        return message;
     }
 
     /**
-     * An example of a method - replace this comment with your own
-     * 
-     * @param  y   a sample parameter for a method
-     * @return     the sum of x and y 
+     * devuelve quien crea el post
      */
-    public int sampleMethod(int y)
+    public void printShortSummary()
     {
-        // put your code here
-        return x + y;
+        System.out.println("Este es un post de texto creado por: "+ getUsername());
     }
 }
+
