@@ -1,5 +1,5 @@
 import java.util.ArrayList;
-public class MessagePost extends Post
+public class MessagePost extends CommentedPost
 {
 
     private String message;
